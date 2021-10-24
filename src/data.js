@@ -23,20 +23,61 @@ export const portfolioMenu = [
 ];
 
 // Featured Data
-export const featuredData = [
+export const reactData = [
   {
     id: 1,
-    title: "Panda E-Commerce Shop",
-    img: "https://i.ibb.co/jbWb6xx/panda-Shop.png",
-    url: "https://aminulds.github.io/panda-shop",
+    title: "Online Course",
+    img: "https://i.ibb.co/QdtH1Pk/online-Course.png",
+    url: "https://wd-online-course.netlify.app",
+  },
+];
+
+// JavaScript Data
+export const javaScriptData = [
+  {
+    id: 1,
+    title: "Calculator App",
+    img: "https://i.ibb.co/0htrrPr/calculator-App.png",
+    url: "https://aminulds.github.io/calculator",
   },
   {
     id: 2,
-    title: "App Landing Page",
-    img: "https://i.ibb.co/sv8MY0V/app-Landing-Page.png",
-    url: "https://aminulds.github.io/app-landing-page",
+    title: "Todo List App",
+    img: "https://i.ibb.co/3pf9Y3X/todo-List-App.png",
+    url: "https://aminulds.github.io/todo-app",
+  },
+  {
+    id: 3,
+    title: "Quiz App",
+    img: "https://i.ibb.co/Y8RYhq7/quiz-App-Java-Script.png",
+    url: "https://aminulds.github.io/quiz-app",
+  },
+  {
+    id: 4,
+    title: "OTP Matcher APp",
+    img: "https://i.ibb.co/371jVVS/otp-Matcher-App.png",
+    url: "https://aminulds.github.io/OTP-matcher",
+  },
+  {
+    id: 5,
+    title: "Bank Transaction App",
+    img: "https://i.ibb.co/dp7t4HN/bank-Transaction.png",
+    url: "https://aminulds.github.io/bank-transaction",
+  },
+  {
+    id: 6,
+    title: "Weather App",
+    img: "https://i.ibb.co/jfGYtR9/weather-App-Java-Script.png",
+    url: "https://aminulds.github.io/weather-app",
+  },
+  {
+    id: 7,
+    title: "Temperature Search App",
+    img: "https://i.ibb.co/zGc7CCf/temperature-App-Java-Script.png",
+    url: "https://aminulds.github.io/temperature-app",
   },
 ];
+
 // Bootstrap Data
 export const bootstrapData = [
   // {
@@ -92,4 +133,12 @@ export const htmlCssData = [
     img: "https://i.ibb.co/K6Nrx3m/personal-Porftfolio.png",
     url: "https://aminulds.github.io/my-portfolio",
   },
+];
+
+// Feature Data
+export const featuredData = [
+  ...reactData.slice(0, 2),
+  ...javaScriptData.slice(0, 2),
+  ...bootstrapData.slice(0, 2),
+  ...htmlCssData.slice(0, 1),
 ];

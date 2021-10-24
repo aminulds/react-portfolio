@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { bootstrapData, featuredData, htmlCssData, portfolioMenu } from "../../data";
+import { bootstrapData, featuredData, htmlCssData, javaScriptData, portfolioMenu, reactData } from "../../data";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss"
 
@@ -18,6 +18,12 @@ export default function Portfolio() {
         break;
       case "bootstrap":
         setPortfolioData(bootstrapData);
+        break;
+      case "javascript":
+        setPortfolioData(javaScriptData.slice(0, 6));
+        break;
+      case "react":
+        setPortfolioData(reactData);
         break;
     
       default:
@@ -46,10 +52,12 @@ export default function Portfolio() {
       <div className="container">
         {
           portfolioData.map(data => (
-          <div className="item">
+          <a href={data.url}>
+            <div className="item">
             <img src={data.img} alt="" />
             <h3>{data.title}</h3>
           </div>
+          </a>
           ))
         };
       </div>
