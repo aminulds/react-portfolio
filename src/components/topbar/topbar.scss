@@ -34,18 +34,23 @@
       }
 
       .itemContainer{
-        display: flex;
-        align-items: center;
         margin-left: 30px;
 
-        .icon{
-          font-size: 20px;
-          margin-right: 5px;
-        }
+        a{
+          margin-right: 15px;
+          color: inherit;
+          
 
-        span{
-          font-size: 16px;
-          font-weight: 500;
+          .icon{
+            font-size: 25px;
+            transition: all 1s ease;
+
+            &:hover{
+              border-radius: 5px;
+              background-color: $mainColor;
+              color: $secondColor;
+            }
+          }
         }
       }
     }
