@@ -54,7 +54,7 @@ export const javaScriptData = [
   },
   {
     id: 4,
-    title: "OTP Matcher APp",
+    title: "OTP Matcher App",
     img: "https://i.ibb.co/371jVVS/otp-Matcher-App.png",
     url: "https://aminulds.github.io/OTP-matcher",
   },

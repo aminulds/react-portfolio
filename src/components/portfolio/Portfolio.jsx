@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { bootstrapData, featuredData, htmlCssData, javaScriptData, portfolioMenu, reactData } from "../../data";
+import { bootstrapData, featuredData, htmlCssData, javaScriptData, portfolioMenu, reactData } from "../../data/portfolioData";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss"
 
