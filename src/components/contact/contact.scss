@@ -1,3 +1,96 @@
+@import '../../global.scss';
+
 .contact{
-  background-color: lightsalmon;
+  background-color: $sectionBgColor2;
+  display: flex;
+
+
+  .left{
+    flex: 1;
+    overflow: hidden;
+
+    img{
+      height: 100%;
+    }
+  }
+
+  .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+      font-size: 30px;
+    }
+
+    .contactInfo{
+      padding: 5px;
+      
+      span{
+        margin-right: 20px;
+
+        i{
+          color:$mainColor;
+          padding-right: 2px;
+        }
+      }
+      // box-shadow: 0px 0px 15px -8px gray;
+    }
+
+    form{
+      background-color: $sectionBgColor1;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px -8px gray;
+      width: 80%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      input, textarea{
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 0px 0px 15px -8px gray;
+
+        &:focus{
+          outline: none;
+          box-shadow: 5px 5px 10px -8px #95d5e9;
+        }
+      }
+
+      input{
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+      }
+      
+      textarea{
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+      }
+
+      button{
+        padding: 5px 15px;
+        background-color: $mainColor;
+        color: $secondColor;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover{
+          color: lightgray;
+        }
+      }
+
+      span{
+        color: green;
+      }
+    }
+  }
 }
