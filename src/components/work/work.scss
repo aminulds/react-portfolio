@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .work{
-  background-color: #e9ecef;
+  background-color: $sectionBgColor2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +27,8 @@
     display: flex;
     position: absolute;
     left: 0;
+    transition: all 1s ease;
+
     .container{
       width: 100vw;
       display: flex;
