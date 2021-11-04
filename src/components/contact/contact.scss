@@ -30,6 +30,20 @@
 
     .contactInfo{
       padding: 5px;
+
+      .itemContainer{
+        display: none;
+
+        @include mobile{
+          display: block;
+          text-align: center;
+        }
+
+        a{
+          margin-left: 5px;
+          color: $mainColor;
+        }
+      }
       
       span{
         margin-right: 20px;
