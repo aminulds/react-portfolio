@@ -1,66 +1,84 @@
 @import '../../global.scss';
 
-.contact{
+.contact {
   background-color: $sectionBgColor2;
   display: flex;
 
-  @include mobile{
-    flex-direction: column;   
+  @include mobile {
+    flex-direction: column;
   }
 
-  .left{
+  .left {
     flex: 1;
     overflow: hidden;
 
-    img{
+    @include mobile {
+      flex: 25%;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+
+    img {
       height: 100%;
 
-      @include mobile{
-        height: 80%;
+      @include mobile {
+        height: 70%;
       }
     }
   }
 
-  .right{
+  .right {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    h2{
-      font-size: 30px;
+    @include mobile {
+      flex: 75%;
     }
 
-    .contactInfo{
-      padding: 5px;
+    h2 {
+      font-size: 30px;
+      overflow: hidden;
 
-      .itemContainer{
+      @include mobile{
+        font-size: 25px;
+      }
+    }
+
+    .contactInfo {
+      padding: 5px;
+      overflow: hidden;
+
+      .itemContainer {
         display: none;
 
-        @include mobile{
+        @include mobile {
           display: block;
           text-align: center;
         }
 
-        a{
+        a {
           margin-left: 5px;
           color: $mainColor;
         }
       }
-      
-      span{
+
+      span {
         margin-right: 20px;
 
-        i{
-          color:$mainColor;
+        i {
+          color: $mainColor;
           padding-right: 2px;
         }
       }
+
       // box-shadow: 0px 0px 15px -8px gray;
     }
 
-    form{
+    form {
       background-color: $sectionBgColor1;
       border-radius: 10px;
       box-shadow: 0px 0px 15px -8px gray;
@@ -71,47 +89,54 @@
       align-items: center;
       justify-content: space-around;
 
-      input, textarea{
+      @include mobile {
+        margin-bottom: 10px;
+        margin-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      input,
+      textarea {
         border: none;
         border-radius: 5px;
         padding-left: 5px;
         box-shadow: 0px 0px 15px -8px gray;
 
-        &:focus{
+        &:focus {
           outline: none;
           box-shadow: 5px 5px 10px -8px #95d5e9;
         }
       }
 
-      input{
+      input {
         width: 300px;
         height: 30px;
         font-size: 14px;
 
-        @include mobile{
+        @include mobile {
           width: 200px;
-          height: 15px;
           margin-bottom: 5px;
           font-size: 10px;
         }
       }
-      input:first-child{
+
+      input:first-child {
         margin-top: 10px;
       }
-      
-      textarea{
+
+      textarea {
         width: 300px;
         height: 150px;
         font-size: 14px;
 
-        @include mobile{
+        @include mobile {
           width: 200px;
           height: 80px;
           font-size: 10px;
         }
       }
 
-      button{
+      button {
         padding: 5px 15px;
         background-color: $mainColor;
         color: $secondColor;
@@ -120,19 +145,19 @@
         cursor: pointer;
         transition: all 0.5s ease;
 
-        @include mobile{
+        @include mobile {
           margin-top: 5px;
         }
 
-        &:hover{
+        &:hover {
           color: lightgray;
         }
       }
 
-      span{
+      span {
         color: green;
 
-        @include mobile{
+        @include mobile {
           font-size: 12px;
         }
 
