@@ -22,10 +22,16 @@ export const portfolioMenu = [
   },
 ];
 
-// Featured Data
+// React Data
 export const reactData = [
   {
     id: 1,
+    title: "Netflix Clone",
+    img: "https://i.ibb.co/Yyk8fbV/1.png",
+    url: "https://netflix-clone56.netlify.app",
+  },
+  {
+    id: 2,
     title: "Online Course",
     img: "https://i.ibb.co/QdtH1Pk/online-Course.png",
     url: "https://wd-online-course.netlify.app",

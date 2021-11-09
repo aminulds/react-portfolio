@@ -32,4 +32,12 @@ export const workData = [
     img: "https://i.ibb.co/FDtLBjh/Workonline-Course.png",
     url: "https://wd-online-course.netlify.app",
   },
+  {
+    id: 5,
+    icon: "https://i.ibb.co/0r8Rk86/react.png",
+    title: "Netflix Clone",
+    description: "I use React, Sass, Axios and many more in this project.",
+    img: "https://i.ibb.co/P6g1ngr/2.png",
+    url: "https://netflix-clone56.netlify.app",
+  },
 ];

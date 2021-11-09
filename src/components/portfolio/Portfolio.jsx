@@ -11,7 +11,7 @@ export default function Portfolio() {
   useEffect(() => {
     switch (selected) {
       case "featured":
-        setPortfolioData(featuredData);
+        setPortfolioData(featuredData.slice(0, 6));
         break;
       case "htmlcss":
         setPortfolioData(htmlCssData);
