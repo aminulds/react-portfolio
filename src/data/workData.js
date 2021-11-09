@@ -24,16 +24,9 @@ export const workData = [
     img: "https://i.ibb.co/QJkx4XJ/work-OTPmatcher.png",
     url: "https://aminulds.github.io/OTP-matcher",
   },
+
   {
     id: 4,
-    icon: "https://i.ibb.co/0r8Rk86/react.png",
-    title: "Online Course App",
-    description: "I use HTML5, CSS3, React and Bootstrap5 in this project.",
-    img: "https://i.ibb.co/FDtLBjh/Workonline-Course.png",
-    url: "https://wd-online-course.netlify.app",
-  },
-  {
-    id: 5,
     icon: "https://i.ibb.co/0r8Rk86/react.png",
     title: "Netflix Clone",
     description: "I use React, Sass, Axios and many more in this project.",
