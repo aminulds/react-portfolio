@@ -19,10 +19,11 @@ export const workData = [
   {
     id: 3,
     icon: "https://i.ibb.co/gwmKmVf/js.png",
-    title: "OTP Matcher App",
-    description: "I use HTML CSS and Vanilla JS in this OTP Matcher App.",
-    img: "https://i.ibb.co/QJkx4XJ/work-OTPmatcher.png",
-    url: "https://aminulds.github.io/OTP-matcher",
+    title: "Temperature Search App",
+    description:
+      "I use HTML CSS and Vanilla JS weather api in this Temperature Search App.",
+    img: "https://i.ibb.co/zGc7CCf/temperature-App-Java-Script.png",
+    url: "https://aminulds.github.io/temperature-app",
   },
 
   {
