@@ -43,4 +43,14 @@ export const workData = [
     img: "https://i.ibb.co/BsL2cGP/1.png",
     url: "https://wd-instagram-clone.netlify.app/",
   },
+  {
+    id: 6,
+    title: "Hulu Clone",
+    img: "https://i.ibb.co/16Q3s60/hulu-clone.png",
+    url: "https://hulu-clone-aminulds.vercel.app",
+
+    icon: "https://i.ibb.co/1L8zT5w/nextjs.png",
+    description:
+      "I use Nextjs, Tailwindcss, heroicons, faker data and many more in this project.",
+  },
 ].reverse();

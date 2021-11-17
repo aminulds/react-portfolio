@@ -6,7 +6,7 @@ export const portfolioMenu = [
   },
   {
     id: "react",
-    title: "React",
+    title: "React/NextJS",
   },
   {
     id: "javascript",
@@ -41,6 +41,12 @@ export const reactData = [
     title: "Netflix Clone",
     img: "https://i.ibb.co/Yyk8fbV/1.png",
     url: "https://netflix-clone56.netlify.app",
+  },
+  {
+    id: 4,
+    title: "Hulu Clone",
+    img: "https://i.ibb.co/16Q3s60/hulu-clone.png",
+    url: "https://hulu-clone-aminulds.vercel.app",
   },
 ].reverse();
 
@@ -143,7 +149,7 @@ export const htmlCssData = [
 
 // Feature Data
 export const featuredData = [
-  ...reactData.slice(0, 2),
+  ...reactData.slice(0, 3),
   ...javaScriptData.slice(0, 2),
   ...bootstrapData.slice(0, 2),
   ...htmlCssData.slice(0, 1),
