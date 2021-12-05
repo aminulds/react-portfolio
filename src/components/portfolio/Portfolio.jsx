@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
-import { bootstrapData, featuredData, htmlCssData, javaScriptData, portfolioMenu, reactData } from "../../data/portfolioData";
-import PortfolioList from "../portfolioList/PortfolioList";
-import "./portfolio.scss"
-
+import {
+  bootstrapData,
+  featuredData,
+  htmlCssData,
+  javaScriptData,
+  portfolioMenu,
+  reactData,
+} from '../../data/portfolioData';
+import PortfolioList from '../portfolioList/PortfolioList';
+import './portfolio.scss';
 
 export default function Portfolio() {
   const [selected, setSelected] = useState('featured');
@@ -10,57 +16,51 @@ export default function Portfolio() {
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
+      case 'featured':
         setPortfolioData(featuredData.slice(0, 6));
         break;
-      case "htmlcss":
+      case 'htmlcss':
         setPortfolioData(htmlCssData);
         break;
-      case "bootstrap":
+      case 'bootstrap':
         setPortfolioData(bootstrapData);
         break;
-      case "javascript":
+      case 'javascript':
         setPortfolioData(javaScriptData.slice(0, 6));
         break;
-      case "react":
+      case 'react':
         setPortfolioData(reactData);
         break;
-    
+
       default:
         setPortfolioData(featuredData);
         break;
     }
   }, [selected]);
-  
 
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        {
-          portfolioMenu.map(item => (
-            <PortfolioList  
+        {portfolioMenu.map((item) => (
+          <PortfolioList
             menuItem={item}
             active={selected === item.id}
             setSelected={setSelected}
             key={item.id}
-            />
-            ) 
-          ) 
-        }
+          />
+        ))}
       </ul>
       <div className="container">
-        {
-          portfolioData.map(data => (
+        {portfolioData.map((data) => (
           <a href={data.url}>
             <div className="item">
-            <img src={data.img} alt="" />
-            <h3>{data.title}</h3>
-          </div>
+              <img src={data.img} alt="" />
+              <h3>{data.title}</h3>
+            </div>
           </a>
-          ))
-        }
+        ))}
       </div>
     </div>
-  )
+  );
 }

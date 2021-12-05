@@ -9,8 +9,12 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['HTML CSS JavaScript', 'Git Bootstrap Sass', 'React MUI']
-    })
+      strings: [
+        'HTML CSS JavaScript',
+        'Sass Bootstrap Tailwiindcss',
+        'React NextJS',
+      ],
+    });
   }, [])
   return (
     <div className="intro" id="intro">
