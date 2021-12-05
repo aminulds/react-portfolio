@@ -61,6 +61,6 @@ export const workData = [
 
     icon: 'https://i.ibb.co/1L8zT5w/nextjs.png',
     description:
-      'I use Nextjs, react-redux Tailwindcss, heroicons, fakestore api data and many more in this project.',
+      'I use Nextjs, Tailwindcss, heroicons, fakestore api data and many more in this project.',
   },
 ].reverse();
