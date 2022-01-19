@@ -157,12 +157,18 @@ export const htmlCssData = [
     img: 'https://i.ibb.co/sv8MY0V/app-Landing-Page.png',
     url: 'https://aminulds.github.io/app-landing-page',
   },
+  {
+    id: 4,
+    title: 'Ralte Organic Fruits Shop',
+    img: 'https://i.ibb.co/KsTmdn2/2.png',
+    url: 'https://aminulds.github.io/ralte_fruits',
+  },
 ].reverse();
 
 // Feature Data
 export const featuredData = [
+  ...bootstrapData.slice(0, 2),
+  ...htmlCssData.slice(1, 2),
   ...reactData.slice(0, 4),
   ...javaScriptData.slice(0, 2),
-  ...bootstrapData.slice(0, 1),
-  ...htmlCssData.slice(0, 1),
 ];
